@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wild West Tycoon</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Wild West Tycoon</h1>
+        <p>Gold: <span id="gold">0</span></p>
+        <p>Bullets: <span id="bullets">0</span></p>
+        <p>Guns: <span id="guns">0</span></p>
+        <p>Dollars: <span id="dollars">0</span></p>
+        <button id="mineGoldBtn">Mine Gold</button>
+        <p>Gold per second: <span id="goldPerSec">0</span></p>
+        
+        <h2>Upgrade Your Businesses</h2>
+        <div class="upgrade" id="goldMine">
+            <p>Gold Mine (+1 gold/sec) - Cost: <span id="goldMineCost">10</span> | Owned: <span id="goldMineOwned">0</span></p>
+            <button class="upgradeBtn" data-business="goldMine">Buy Gold Mine</button>
+        </div>
+        <div class="upgrade" id="saloon">
+            <p>Saloon (+5 gold/sec) - Cost: <span id="saloonCost">100</span> | Owned: <span id="saloonOwned">0</span></p>
+            <button class="upgradeBtn" data-business="saloon">Buy Saloon</button>
+        </div>
+        <div class="upgrade" id="ranch">
+            <p>Ranch (+20 gold/sec) - Cost: <span id="ranchCost">500</span> | Owned: <span id="ranchOwned">0</span></p>
+            <button class="upgradeBtn" data-business="ranch">Buy Ranch</button>
+        </div>
+        <div class="upgrade" id="gunsmith">
+            <p>Gunsmith (+1 gun/sec, +10 bullets/sec) - Cost: <span id="gunsmithCost">1000</span> | Owned: <span id="gunsmithOwned">0</span></p>
+            <button class="upgradeBtn" data-business="gunsmith">Buy Gunsmith</button>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
