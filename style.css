@@ -1,0 +1,151 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #f0e68c, #daa520);
+    text-align: center;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Container Styling */
+.container {
+    max-width: 500px;
+    margin: auto;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+}
+
+/* Header Styling */
+h1 {
+    font-size: 24px;
+    color: #8b4513;
+    margin-bottom: 20px;
+}
+
+/* Currency Display Styling */
+.container p {
+    font-size: 18px;
+    margin: 8px 0;
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+}
+
+/* Specific Colors for Currencies */
+p span#gold {
+    color: #ffd700;
+}
+
+p span#bullets {
+    color: #b22222;
+}
+
+p span#guns {
+    color: #696969;
+}
+
+p span#dollars {
+    color: #228b22;
+}
+
+/* Button Styling */
+button {
+    background-color: #8b4513;
+    border: none;
+    padding: 12px 20px;
+    cursor: pointer;
+    border-radius: 6px;
+    font-size: 16px;
+    margin: 8px 0;
+    color: #fff;
+    width: 100%;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+    background-color: #a0522d;
+}
+
+button:active {
+    transform: scale(0.98);
+}
+
+/* Upgrade Section Styling */
+.upgrade {
+    background-color: #f5f5dc;
+    padding: 10px;
+    border-radius: 8px;
+    margin-top: 12px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
+}
+
+/* Upgrade Section Text */
+.upgrade p {
+    margin: 5px 0;
+    font-size: 15px;
+}
+
+/* Additional Styling for Headers */
+h2 {
+    color: #8b4513;
+    margin: 15px 0;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    body {
+        padding: 10px;
+    }
+
+    .container {
+        width: 100%;
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    button {
+        font-size: 14px;
+        padding: 10px 15px;
+    }
+
+    .upgrade {
+        padding: 8px;
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+}
+
+/* Animation for Button Clicks */
+button:active {
+    animation: buttonPress 0.1s ease;
+}
+
+@keyframes buttonPress {
+    0% { transform: scale(1); }
+    100% { transform: scale(0.95); }
+}
+
+/* Shadow Styling for the Whole Container */
+.container {
+    border: 2px solid #8b4513;
+}
